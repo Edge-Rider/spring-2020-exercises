@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+/* COPIED FROM CLASSES: */
+html {
+    background: transparent url('background-grid.png') left top repeat scroll;
+}
+
+
+body {
+    height: 1000px;
+    border: 2px solid red;
+}
+
+.ten {
+    border: 2px solid darkseagreen;
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+}
+
+.eleven {
+    border: 2px solid blue;
+    height: 400px;
+    width: 400px;
+    margin: 40px;
+    position: relative;
+}

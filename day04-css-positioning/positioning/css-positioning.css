@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+/* COPIED FROM CLASSES: */
+html {
+    background: transparent url('background-grid.png') left top repeat scroll;
+    font-size: 10px;
+}
+
+body {
+    font-size: 20px;    
+    margin: 0;
+    /* width: 50%; */
+    /* height: 2000px; */
+    /* background-color: rgba(255, 165, 0, 0.1); */
+    /* background-color: #ffa500aa; */
+    /* overflow: hidden; */
+    color: green;
+    margin: 0 auto;
+}
+
+body > div {
+    color: black;    
+}
+
+.one {
+    font-size: 2em;    
+    border: 1px solid blue;
+    /* height: 100px; */
+    /* width: 50%; */
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    -webkit-box-shadow: 2px -1px 68px 16px rgba(199,50,199,0.73);
+-moz-box-shadow: 2px -1px 68px 16px rgba(199,50,199,0.73);
+box-shadow: 2px -1px 68px 16px rgba(199,50,199,0.73);
+}
+
+.two {
+    font-size: 2rem;
+}
+
+.three {
+    border: 2px solid red;
+    width: 50vw;
+    height: 50vh;
+    font-size: 20vh;
+    display: none;
+}
+
+.four {
+    border: 1px solid green;
+    display: inline;
+    /* margin: 0.5em; */
+}
+
+.five {
+    display: block;
+    border: 2px solid orange;
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px;
+    overflow: hidden;
+    color: inherit;
+    border-radius: 50%;
+}
+
+.six {
+    border: 2px solid purple;
+    margin-top: 1em;
+    display: inline-block;
+}
+
+.seven {
+    border: 2px solid pink;
+    /* width: 400px; */
+    /* min-height: 100px;
+    max-height: 200px; */
+    padding-right: 20px;
+    padding-left: 10px;
+    /* padding: 10px 20px 30px 5px; */
+    padding: 10px 20px;
+    padding: 10px 20px 5px;
+    margin: 50px;
+    margin-top: -100px;
+}
+
+.eight {
+    border: 2px solid crimson;
+    /* position: relative;
+    bottom: 200px;
+    left: -100px; */
+}
+
+.nine {
+    border: 2px solid darkgoldenrod;
+    position: absolute;
+    left: 100px;
+    bottom: 400px;
+    z-index: 1000;
+}
+
+.ten {
+    border: 2px solid darkseagreen;
+}
