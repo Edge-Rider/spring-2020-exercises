@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Sketch Gothic School';
+    src: url('SketchGothicSchool.eot');
+    src: url('SketchGothicSchool.eot?#iefix') format('embedded-opentype'),
+        url('SketchGothicSchool.woff2') format('woff2'),
+        url('SketchGothicSchool.woff') format('woff'),
+        url('SketchGothicSchool.ttf') format('truetype'),
+        url('SketchGothicSchool.svg#SketchGothicSchool') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'Sketch Gothic School', 'Times New Roman', Times, serif;
+    font-weight: normal;
+}

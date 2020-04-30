@@ -6,6 +6,7 @@
 html {
     background: transparent url('background-grid.png') left top repeat scroll;
     font-size: 10px;
+    position: relative;
 }
 
 body {
@@ -71,6 +72,10 @@ box-shadow: 2px -1px 68px 16px rgba(199,50,199,0.73);
     border: 2px solid purple;
     margin-top: 1em;
     display: inline-block;
+    background: -moz-linear-gradient(-45deg,  #20a024 0%, #f4f42e 30%, #207cca 75%, #cf76db 100%);
+    background: -webkit-linear-gradient(-45deg,  #20a024 0%,#f4f42e 30%,#207cca 75%,#cf76db 100%);
+    background: linear-gradient(135deg,  #20a024 0%,#f4f42e 30%,#207cca 75%,#cf76db 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20a024', endColorstr='#cf76db',GradientType=1 );
 }
 
 .seven {
@@ -85,6 +90,10 @@ box-shadow: 2px -1px 68px 16px rgba(199,50,199,0.73);
     padding: 10px 20px 5px;
     margin: 50px;
     margin-top: -100px;
+    background: -moz-linear-gradient(-45deg,  #20a024 0%, #f4f42e 30%, #207cca 75%, #cf76db 100%);
+    background: -webkit-linear-gradient(-45deg,  #20a024 0%,#f4f42e 30%,#207cca 75%,#cf76db 100%);
+    background: linear-gradient(135deg,  #20a024 0%,#f4f42e 30%,#207cca 75%,#cf76db 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20a024', endColorstr='#cf76db',GradientType=1 );
 }
 
 .eight {
@@ -104,4 +113,34 @@ box-shadow: 2px -1px 68px 16px rgba(199,50,199,0.73);
 
 .ten {
     border: 2px solid darkseagreen;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: darkseagreen;
+    z-index: 10;
+}
+
+.ten2 {
+    border: 2px solid blue;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: blue;
+    z-index: 2;
+}
+
+.background {
+    border: 2px solid black;
+    height: 200px;
+    width: 400px;
+    background-image: url('background-image.jpg');
+    /* background-size: contain; */
+    /* background-size: 100px; */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: local;
+    overflow: scroll; */
+    /* background-position: right 10px bottom 10px; */
+
+    /*             color              image                  position            size   repeat   attachment */
+    background: transparent url('background-image.jpg') right 10px bottom 10px / 100px no-repeat scroll;
 }
