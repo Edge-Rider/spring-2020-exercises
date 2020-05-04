@@ -1,0 +1,66 @@
+@import 'colors.scss';
+
+$primary_font: Arial;
+$page_width: 600px;
+
+html {
+    font-family: $primary_font;
+}
+
+body {
+    background-color: $background_color;
+    color: white;
+    max-width: $page_width;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: $primary_color;
+}
+
+h2 {
+    text-align: center;
+    color: $primary_color;
+}
+
+p {
+    border-bottom: 2px solid $primary_color;
+}
+
+button {
+    font-family: $primary_font;
+}
+
+main {
+
+    a {
+        color: crimson;
+        text-decoration: none;
+    }
+}
+
+
+#top {
+
+    nav {
+        display: flex;
+
+        a {
+            flex-grow: 1;
+            color: black;
+            background: silver;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5em;
+
+            &:hover {
+                background: rgb(138, 138, 138);
+                color: white;
+            }
+        }
+    }
+}
+
+@import 'footer.scss';
