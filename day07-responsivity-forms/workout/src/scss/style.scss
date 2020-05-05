@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'PT Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    background: 
+        transparent 
+        url('https://classes.codingbootcamp.cz/assets/classes/860/got-bg.jpg')
+        center /
+        cover
+        no-repeat
+        scroll;
+    height: 100vh;
+    display: flex;
+}
+
+main {
+    flex-grow: 1;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-between;
+    padding: 4em;
+
+    h1 {
+        align-self: flex-end;
+        margin: 0;
+        font-size: 3em;
+    }
+
+    .tagline {
+        font-size: 2em;
+        text-align: right;
+    }
+}
+
