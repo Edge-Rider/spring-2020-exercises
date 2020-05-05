@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 2em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5em;
+}
+
+
+main h1 {
+    font-size: 6em;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+}
