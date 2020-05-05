@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demonstration</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Change your user info, Honza</h1>
+
+    <form action="https://classes.codingbootcamp.cz/assets/classes/request-visualization/script.php" method="post">
+
+        <input type="hidden" name="is_robot" value="1">
+
+        <label for="first_name_input">Your name</label>
+        <input id="first_name_input" type="text" name="user[first_name]" value="" placeholder="Write in your first name, please" required>
+        <br>
+        <br>
+
+        <textarea name="user[biography]" id="" cols="30" rows="10" placeholder="Your bio"></textarea>
+        <br>
+        <br>
+
+        <label>
+            Is administrator
+            <input type="hidden"   name="user[is_admin]" value="0">
+            <input id="is_admin_checkbox" type="checkbox" name="user[is_admin]" value="1" checked>
+        </label>
+        <br>
+        <br>
+
+        <label>
+            Female
+            <input type="radio" name="gender" value="female">
+        </label>
+        <label>
+            Male
+            <input type="radio" name="gender" value="male">
+        </label>
+        <label>
+            Unknown
+            <input type="radio" name="gender" value="unknown" checked>
+        </label>
+        <br>
+        <br>
+
+        <select name="user_role" id="">
+            <option value="user">User</option>
+            <option value="admin" selected>Administrator</option>
+            <option value="m">Moderator</option>
+        </select>
+
+        <br>
+        <br>
+        <input type="submit" value="Save" name="submit">
+        <input type="submit" value="Delete" name="submit">
+
+    </form>
+    
+</body>
+</html>
