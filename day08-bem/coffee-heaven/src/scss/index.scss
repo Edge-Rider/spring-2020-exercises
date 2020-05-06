@@ -1,0 +1,61 @@
+@import 'variables';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  font-family: sans-serif;
+  justify-content: flex-end;
+  background-image: url("/img/coffee-photo.jpg");
+  height: 100vh;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  background-color: rgba(45, 31, 11, 0.6);
+  height: 100%;
+  padding-top: 1.8rem;
+
+  p {
+    color: $plain-white;
+    line-height: 1.6;    
+    text-align: center;
+    padding: 0 2rem;
+    font-size: 1.3rem;
+  }
+
+  h1 {
+    color: $plain-white;
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  div {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    > button {
+      width: 220px;
+      height: 100px;
+      background-color: $bright-red;
+      border: 0;
+      font-size: 1.2rem;
+      font-weight: 900;
+      color: $plain-white;
+      border: 1px solid $plain-white;
+      border-radius: 5px;
+    }
+  }
+}
