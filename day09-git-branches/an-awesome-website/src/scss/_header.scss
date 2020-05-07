@@ -1,0 +1,30 @@
+.header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 30vh;
+	background-color: #e9ebee;
+	text-align: center;
+	padding: 1rem;
+
+	@media (min-width: 720px) {
+		padding: 1rem 4rem;
+	}
+
+	@media (min-width: 1200px) {
+		padding: 1rem 6rem;
+	}
+
+	&__title {
+		margin: 0;
+
+		@media (min-width: 720px) {
+			font-size: 3rem;
+		}
+	}
+
+	&__intro {
+		font-size: 1.25rem;
+		font-weight: 300;
+	}
+}
