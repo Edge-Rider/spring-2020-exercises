@@ -1,0 +1,67 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	color: $black;
+  font-size: 16px;
+  font-family: $base-font;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+a {
+	color: $blue;
+
+	&:hover {
+		color: darken($blue, 5%);
+	}
+}
+
+.main {
+	width: 90%;
+	margin: 0 auto;
+
+	@media (min-width: $large) {
+		width: 80%;
+	}
+
+	@media (min-width: $xlarge) {
+		width: 70%;
+	}
+
+	.main__desc {
+		font-size: 1.25rem;
+		line-height: 1.6;
+	}
+
+	.main__img {
+		width: 100%;
+		height: auto;
+
+		&:last-child {
+			margin-bottom: -3rem;
+		}
+	}
+}

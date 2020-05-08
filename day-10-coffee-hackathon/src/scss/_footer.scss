@@ -1,0 +1,32 @@
+.footer {
+	color: $white;
+	background-color: $grey-dark;
+	text-align: center;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+
+	.footer__container {
+		margin-bottom: 4rem;
+	}
+
+	.footer__link {
+		display: inline-block;
+		margin-left: 1rem;
+		padding: 0.5rem;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+
+	.footer__link--active {
+		color: $white;
+		text-decoration: none;
+	}
+
+	h2 {
+		font-size: 1.25rem;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+}

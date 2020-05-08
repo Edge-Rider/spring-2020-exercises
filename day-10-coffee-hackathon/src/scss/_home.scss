@@ -1,0 +1,57 @@
+.info {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	.info__item {
+		width: 100%;
+
+		@media (min-width: $medium) {
+			width: 33%;
+		}
+	}
+
+	.info__title {
+		margin-top: 0.75rem;
+		margin-bottom: 1rem;
+
+		@media (min-width: $medium) {
+			margin-top: 1.5rem;
+		}
+	}
+
+	p {
+		line-height: 1.6;
+	}
+
+	.info__img {
+		height: 15rem;
+		object-fit: contain;
+
+		@media (min-width: $medium) {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.info--team {
+	text-align: center;
+
+	.info__item {
+		margin-bottom: 1rem;
+
+		@media (min-width: $medium) {
+			margin-bottom: 3rem;
+		}
+	}
+
+	.info__title {
+		margin-top: 0.75rem;
+		margin-bottom: 0.5rem;
+	}
+
+	p {
+		margin: 0;
+	}
+}
