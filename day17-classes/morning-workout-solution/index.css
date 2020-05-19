@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:regular");
+@import url('https://fonts.googleapis.com/css?family=Roboto:regular');
 
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
 }
 
@@ -56,18 +56,4 @@ body {
 
 .message--remote .message__text {
   background: #ddd;
-}
-
-.btn-like {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 1.5rem;
-  border: none;
-  outline: none;
-  background-color: orange;
-  color: white;
-}
-
-.btn-like--liked {
-  background-color: red;
 }
