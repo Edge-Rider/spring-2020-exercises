@@ -1,0 +1,11 @@
+.message {
+  line-height: 150%;
+
+  &__sender {
+    font-weight: bold;
+  }
+
+  &__subject {
+    color: #999;
+  }
+}
