@@ -1,7 +1,7 @@
 <header>
     Slavo Kozar's personal page
     <nav>
-        <a href="home.php">Home</a>
-        <a href="page.php">Page #2</a>
+        <a href="index.php">Home</a>
+        <a href="index.php?p=page">Page #2</a>
     </nav>
 </header>
