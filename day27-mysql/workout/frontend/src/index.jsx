@@ -10,7 +10,7 @@ class App extends React.Component {
     return (
       <>
         <Celebrities 
-          url=""
+          url="http://www.cbp-exercises.test/day27-mysql/workout/backend/"
         />
       </>
     );
