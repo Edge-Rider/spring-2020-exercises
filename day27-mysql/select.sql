@@ -23,3 +23,26 @@ LIMIT 0, 10;
 -- LIMIT 10;
 
 
+SELECT *
+FROM `city`
+LIMIT 0, 100;
+
+
+SELECT *
+FROM `city`
+ORDER BY `Population` DESC
+LIMIT 0, 100;
+
+SELECT *
+FROM `city`
+WHERE `District` LIKE '%Holland';
+
+SELECT *
+FROM `city`
+WHERE `Name` LIKE '%ville%';
+
+SELECT *
+FROM `city`
+WHERE `CountryCode` IN ('CZE', 'SVK', 'POL', 'HUN')
+ORDER BY `Population` DESC
+LIMIT 10;
