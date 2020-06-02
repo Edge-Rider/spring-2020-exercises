@@ -23,4 +23,9 @@ class Country
         //     number_format - built-in PHP function
         return number_format($this->Population, 0, ',', ' ');
     }
+
+    public function __toString()
+    {
+        return $this->Name;
+    }
 }

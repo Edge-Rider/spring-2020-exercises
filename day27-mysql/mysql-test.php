@@ -20,7 +20,9 @@ $results = select('
 // var_dump($results);
 
 foreach ($results as $country) {
-    echo $country->getPopulationFormatted() . '<br>';
+    // echo $country->getPopulationFormatted() . '<br>';
+
+    echo $country . '<br>';
 }
 
 // header('Content-type: application/json');
