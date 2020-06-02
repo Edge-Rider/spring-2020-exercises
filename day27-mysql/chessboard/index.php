@@ -35,7 +35,6 @@ for ($row = 1; $row <= 8; $row++) {
         // we add the code for the square, together with its class 
         // and the piece inside
         $html .= '<div class="' . $class . '">' . $piece . '</div>';
-
     }
 
     // end HTML for a row
@@ -75,7 +74,7 @@ $html .= '</div>';
 </head>
 <body>
 
-    <?= $html ?>
+    <?php echo $html ?>
     
 </body>
 </html>
