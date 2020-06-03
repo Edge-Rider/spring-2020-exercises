@@ -1,0 +1,62 @@
+Table users {
+  id int [pk]
+}
+
+Table user_friends {
+  user_id int [pk, ref: > users.id]
+  friend_id int [pk, ref: > users.id]
+}
+
+Table chat_messages {
+  id int [pk]
+  from_user_id int [pk, ref: > users.id]
+  to_user_id int [pk, ref: > users.id]
+  text text
+  sent_at datetime
+  read_at datetime
+}
+
+Table posts {
+   id int [pk]
+   user_id int [pk, ref: > users.id]
+   text text
+   published_at datetime
+}
+
+Table reactions {
+  id int [pk]
+  name varchar(127)
+  icon varchar(127)
+}
+
+Table post_reactions {
+  id int [pk]
+  user_id int [pk, ref: > users.id]
+  post_id int [pk, ref: > posts.id]
+  reaction int [pk, ref: > reactions.id]
+}
+
+Table post_comments {
+  id int [pk]
+  user_id int [pk, ref: > users.id]
+  post_id int [pk, ref: > posts.id]
+  text text
+  submitted_at datetime
+}
+
+Table post_comment_reactions {
+  id int [pk]
+  user_id int [pk, ref: > users.id]
+  post_comment_id int [pk, ref: > post_comments.id]
+  reaction int [pk, ref: > reactions.id]
+}
+
+Table groups {
+  id int [pk]
+  name  varchar(127)
+}
+
+Table group_user {
+  group_id int [pk, ref: > groups.id]
+  user_id int [pk, ref: > users.id]
+}

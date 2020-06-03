@@ -1,0 +1,24 @@
+Table articles {
+  id int [pk]
+  author_id int [ref: > authors.id]
+}
+
+Table authors {
+  id int [pk]
+  user_id int [ref: - users.id]
+}
+
+Table users {
+  id int [pk]
+}
+
+Table readers {
+  id int [pk]
+  user_id int [ref: - users.id]
+}
+
+Table comments {
+  id int [pk]
+  reader_id int [ref: > readers.id]
+  article_id int [ref: > articles.id]
+}
