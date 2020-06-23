@@ -3,6 +3,7 @@ import Navigation from "./Navigation.jsx";
 import UserInfo from "./UserInfo.jsx";
 
 class Header extends React.Component {
+  //component with the header in here we also import the UserInfo and Navigation component
   render() {
     return (
       <header>

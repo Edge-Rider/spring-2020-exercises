@@ -2,6 +2,7 @@ import React from "react";
 import Product from "./Product.jsx";
 
 class ProductList extends React.Component {
+  //we initiate the state in constructor and create an array of products in it
   constructor(props) {
     super(props);
     this.state = {
@@ -40,9 +41,11 @@ class ProductList extends React.Component {
     };
   }
   render() {
+    //destructuring the this.state object of the component
     const { products } = this.state;
     return (
       <div className="product-list">
+        {/**we take our products variable that we initiated in the state and iterrate through it so we can render Product component for each of the products that we have in our array */}
         {products.map((product, index) => (
           <Product name={product.name} imgSrc={product.imgSrc} key={index} />
         ))}

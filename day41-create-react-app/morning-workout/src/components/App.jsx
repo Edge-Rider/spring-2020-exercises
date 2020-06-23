@@ -2,23 +2,18 @@ import React from "react";
 import Header from "./Header/Index.jsx";
 import Search from "./Search.jsx";
 import Footer from "./Footer.jsx";
-import ProductList from "./ProductList/Index.jsx";
 import "../style.css";
+import Main from "./Main.jsx";
 
 class App extends React.Component {
+  //main goal of this exercise was to devide the big file into as small components as possible
   render() {
     return (
       <div id="page">
         <Header />
         <Search />
-        <div id="main">
-          <div className="content">
-            <h1>Products</h1>
-
-            <ProductList />
-          </div>
-          <Footer />
-        </div>
+        <Main />
+        <Footer />
       </div>
     );
   }

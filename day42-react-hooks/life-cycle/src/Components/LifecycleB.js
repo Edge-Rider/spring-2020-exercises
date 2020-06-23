@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 class LifecycleB extends Component {
+  //for each method we are console.loging name of the component and the name of the method
   constructor(props) {
     super(props);
     this.state = {
@@ -8,6 +9,8 @@ class LifecycleB extends Component {
     };
     console.log("LifecycleB constructor");
   }
+
+  //in constructor we initiate the state with the props that we have passed from the parent, when the prop name changes in the parent static getDerivedStateFromProps is called and we check if the newProps equals to the nextState
   static getDerivedStateFromProps(nextProps, prevState) {
     console.log(`LifecycleB prevState.name ${prevState.name}`);
     console.log(`LifecycleB nextProps.name ${nextProps.name}`);

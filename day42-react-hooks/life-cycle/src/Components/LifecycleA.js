@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import LifecycleB from "./LifecycleB";
 
 class LifecycleA extends Component {
+  //for each method we are console.loging name of the component and the name of the method
   constructor(props) {
     super(props);
     this.state = {
@@ -13,6 +14,7 @@ class LifecycleA extends Component {
     console.log("LifecycleA getDerivedStateFromProps");
     return null;
   }
+  //componentDidMount of the parent component is always ran only after all of the children components were already rendered
   componentDidMount() {
     console.log("LifecycleA componentDidMount");
     this.setState({ name: "jane" });
