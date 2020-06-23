@@ -1,8 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 
-class Product extends React.Component {
+class Product extends Component {
   render() {
     const { imgSrc, name } = this.props;
+
     return (
       <div className="product">
         <img src={imgSrc} alt={name} />
