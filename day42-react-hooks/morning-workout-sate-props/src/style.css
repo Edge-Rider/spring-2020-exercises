@@ -106,3 +106,13 @@ footer {
   background-color: rgb(211, 211, 211);
   padding: 0.25em;
 }
+
+button {
+  margin: 16px;
+  padding: 8px;
+  width: 260px;
+}
+
+.App {
+  display: flex;
+}
