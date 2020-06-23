@@ -111,6 +111,8 @@ button {
   margin: 16px;
   padding: 8px;
   width: 260px;
+  background: lightpink;
+  border: 1px solid;
 }
 
 .App {

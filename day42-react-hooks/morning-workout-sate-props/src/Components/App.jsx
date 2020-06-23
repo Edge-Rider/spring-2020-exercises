@@ -19,9 +19,9 @@ class App extends React.Component {
     const { count } = this.state;
     return (
       <div className="App">
-        <CounterButton onClick={this.decremenetCount} text="Decremenet Count" />
+        <CounterButton onClick={this.decremenetCount} value="-" />
         <Display count={count} />
-        <CounterButton onClick={this.incrementCount} text="Increment Count" />
+        <CounterButton onClick={this.incrementCount} value="+" />
       </div>
     );
   }
