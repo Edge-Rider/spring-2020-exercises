@@ -27,12 +27,14 @@ class App extends Component {
   // };
 
   fetchTheData = async () => {
-    const url = "https://swapi.dev/api/";
+    const url = "https://swapi.dev/api/films/1/";
     const filmResponse = await fetch(url);
     const fimlData = await filmResponse.json();
+    this.setState({ film: fimlData });
+
     const characterResponse = await fetch(this.state.film.characters[0]);
     const characterData = characterResponse.json();
-    return this.setState({ film: fimlData, characterOfTheFilm: characterData });
+    return this.setState({ characterOfTheFilm: characterData });
   };
 
   componentDidMount() {
