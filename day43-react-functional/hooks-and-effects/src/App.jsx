@@ -1,58 +1,38 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from "react";
+import Pokemon from "./Components/Pokemon";
 
-function App() {
-  const [pokemon, setPokemon] = useState([])
-  const [pokemonThumbnails, setPokemonThumbnails] = useState([])
-  // const pokemonState = useState([])
-  // const pokemon = pokemonState[0]
-  // const setPokemon = pokemonState[1]
+//base url that we use to fetch data
+const url = "https://pokeapi.co/api/v2/pokemon?offset=0&limit=5";
 
-  useEffect(() => {
-    getPokemon()
-  }, []) // Empty array is the same as componentDidMount (only runs on first render)
+const App = () => {
+  //initiate state with useState() hook, 1. parameter is state, 2. is setter that is similar to this.setState({pokemon: ...});
+  const [pokemons, setPokemons] = useState([]);
 
-  useEffect(() => {
-    getPokemonWithThumbnails()
-  }, [pokemon])
-
-  const getPokemonWithThumbnails = async () => {
-    let pokemonDetailedObjects = []
-    for (const poke of pokemon) {
-      const response = await fetch(poke.url)
-      const data = await response.json()
-      pokemonDetailedObjects.push({
-        ...data.species,
-        thumbnail: data.sprites.front_default,
-      })
+  const fetchData = async () => {
+    const response = await fetch(url);
+    const data = await response.json();
+    //by console.log(data) we found out that from API we get and object that contains property results and in it we can find array of pokemons based on our API call
+    if (data) {
+      setPokemons(data.results);
+    } else {
+      return null;
     }
-    setPokemonThumbnails(pokemonDetailedObjects)
-  }
+  };
 
-  const getPokemon = async () => {
-    try {
-      const response = await fetch('https://pokeapi.co/api/v2/pokemon?offset=0&limit=5')
-      const data = await response.json()
-      setPokemon(data.results)
-    } catch (err) {
-      console.log('getPokemon error', err)
-    }
-  }
-  const pokemonElements = pokemonThumbnails.map((poke, index) => {
-    return (
-      <div key={`pokemon-${index}`} style={{ display: 'flex' }}>
-        <img src={poke.thumbnail} alt={poke.name}/>
-        <p>{poke.name}</p>
-      </div>
-    )
-  })
-  return <div>{pokemonElements}</div>
-}
+  //useEffect() hook kind of replaces the lifecycle methods in the class components and we should fetch data here!
+  useEffect(() => {
+    fetchData();
+  }, []);
 
-export default App
+  return (
+    <div>
+      <h1>Pokemon App</h1>
+      {/**I take my pokemons array iterrate through it and pass the props to the child component Pokemon, each child of an array needs to have the key! */}
+      {pokemons.map((pokemon, index) => (
+        <Pokemon key={index} pokemon={pokemon} />
+      ))}
+    </div>
+  );
+};
 
-// constructor(props) {
-//   super(props)
-//   this.state = {
-//     pokemon: []
-//   }
-// }
+export default App;
