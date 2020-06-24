@@ -1,13 +1,19 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 class SearchResults extends Component {
-    render() {
-        return (
-            <div className='searchResults-container'>
-               Add search results here.
-            </div>
-        )
-    }
+  render() {
+    const { searchResults } = this.props;
+    return (
+      <div className="searchResults-container">
+        {searchResults.map((result, index) => (
+          <div key={index}>
+            <h2>{result.title}</h2>
+            <p>{result.pageid}</p>
+          </div>
+        ))}
+      </div>
+    );
+  }
 }
 
-export default SearchResults
+export default SearchResults;
