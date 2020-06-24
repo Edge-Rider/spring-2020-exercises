@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 
 import Nav from "./Nav";
@@ -9,6 +8,8 @@ import Users from "./Users";
 const App = () => {
   return (
     <div className="App">
+      <Nav />
+
       <footer>Footer</footer>
     </div>
   );
