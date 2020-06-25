@@ -83,25 +83,6 @@ header .user a {
   margin-top: 0;
 }
 
-.product-list {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-
-.product-list .product {
-  width: 30%;
-  border: 1px solid #c7c7c7;
-  border-radius: 0.25em;
-  margin-bottom: 2em;
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-size: 1.2em;
-  align-items: center;
-}
-
 footer {
   background-color: rgb(211, 211, 211);
   padding: 0.25em;
