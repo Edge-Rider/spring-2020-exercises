@@ -8,11 +8,8 @@ const SearchBar = ({
 }) => {
   return (
     <div className="searchBar-container" onKeyUp={handleKeyPress}>
-      <input
-        className="searchBar-input"
-        value={searchValue}
-        onChange={handleInputChange}
-      />
+      {/**we are setting searchValue to be the what we type in by calling our method handleInputChange we created in the App.jsx this function sets state of the searchValue by targeting the input prop value */}
+      <input className="searchBar-input" onChange={handleInputChange} />
       <button className="searchBar-button" onClick={handleSearchClick}>
         Search
       </button>

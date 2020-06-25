@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 
-Users = () => {
+const Users = (props) => {
+  useEffect(() => {
+    console.log(props.match);
+  });
   return (
     <div className="users-container">
       <h1>Users</h1>
