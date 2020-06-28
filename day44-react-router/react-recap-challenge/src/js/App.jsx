@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Homepage from "./pages/Hompage";
+import Homepage from "./pages/Hompage.jsx";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const App = () => {
