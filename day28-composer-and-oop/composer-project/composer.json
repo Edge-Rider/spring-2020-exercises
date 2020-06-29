@@ -1,0 +1,6 @@
+{
+    "name": "jpola/composer-project",
+    "require": {
+        "guzzlehttp/guzzle": "^6.5"
+    }
+}
