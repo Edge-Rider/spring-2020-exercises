@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axios</title>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+    <button onClick="runRequest()">Run AJAX request</button>
+
+    <script>
+
+        const runRequest = () => {
+            
+            axios("https://classes.codingbootcamp.cz/assets/classes/602/guardian.php", {
+                method: "GET"
+            })
+            .then(data => {
+                console.log(data.status);
+                console.log(data.data);
+            })
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XMLHttpRequest</title>
+</head>
+<body>
+
+    <button onClick="runRequest()">Run AJAX request</button>
+
+    <script>
+
+        const runRequest = () => {
+            var ajax = new XMLHttpRequest();
+
+            ajax.onreadystatechange = function() {
+                // handle any state change here, eg:
+                if(ajax.readyState == 4) { // 4 == request returned with a response
+                    console.log(ajax);
+                }
+            }
+
+            ajax.open("GET", "https://classes.codingbootcamp.cz/assets/classes/602/guardian.php");
+
+            ajax.send();
+        }
+
+    </script>
+    
+</body>
+</html>
