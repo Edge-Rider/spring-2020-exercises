@@ -62,3 +62,8 @@ FROM `paragraphs`
 WHERE MATCH (`text`) AGAINST ('+Edmond +Dantès' IN BOOLEAN MODE);
 -- 0.0083s
 -- 90 results
+
+for
+and
+on
+Bob
